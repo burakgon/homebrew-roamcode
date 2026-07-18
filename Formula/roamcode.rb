@@ -1,8 +1,8 @@
 class Roamcode < Formula
   desc "Operate Claude Code or Codex sessions remotely"
   homepage "https://roamcode.ai"
-  url "https://registry.npmjs.org/roamcode/-/roamcode-1.4.1.tgz"
-  sha256 "64623a8c7e99571595a1f2871214d14bd2b80685abee7fc407804109c9b38de4"
+  url "https://registry.npmjs.org/roamcode/-/roamcode-1.4.2.tgz"
+  sha256 "2077e20f6c78468b3768439c18b53d4d7e0f705736624f3622790b7f8e830fc7"
   license "MIT"
 
   depends_on "node"
@@ -14,6 +14,6 @@ class Roamcode < Formula
   end
 
   test do
-    assert_equal "1.4.1", shell_output("#{bin}/roamcode --version").strip
+    assert_equal "1.4.2", shell_output("#{bin}/roamcode --version").strip
   end
 end
