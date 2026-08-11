@@ -1,8 +1,8 @@
 class Roamcode < Formula
   desc "Self-hosted mission control for Claude Code and Codex"
   homepage "https://roamcode.ai"
-  url "https://registry.npmjs.org/roamcode/-/roamcode-4.0.5.tgz"
-  sha256 "c5777485e5188ec1c1d1c1c3111679a18f263d5549192cc6b3c72664542ebef9"
+  url "https://registry.npmjs.org/roamcode/-/roamcode-4.0.6.tgz"
+  sha256 "fdb5db4a14ccaa1b8d11c1cef936e80673c27cd8ba8d83e1c7afad8e34b55ca0"
   license "MIT"
 
   depends_on "node"
@@ -14,6 +14,6 @@ class Roamcode < Formula
   end
 
   test do
-    assert_equal "4.0.5", shell_output("#{bin}/roamcode --version").strip
+    assert_equal "4.0.6", shell_output("#{bin}/roamcode --version").strip
   end
 end
